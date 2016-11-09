@@ -1,22 +1,16 @@
 <html>
   <!-- [START csslink] -->
   <head>
-    <link type="text/css" rel="stylesheet" href="main.css" />
+  
   </head>
   <!-- [END csslink] -->
   <body>
-    <?php
-    // [START formprocessing]
-    if (array_key_exists('content', $_POST)) {
-        echo "You wrote:<pre>\n";
-        echo htmlspecialchars($_POST['content']);
-        echo "\n</pre>";
-    }
-    // [END formprocessing]
-    ?>
-    <form action="/sign" method="post">
-      <div><textarea name="content" rows="3" cols="60"></textarea></div>
-      <div><input type="submit" value="Sign Guestbook"></div>
-    </form>
+   <form action= "main.php" enctype="multipart/form-data" method="post">
+    Username:  <input type="text" name = "username" value="">
+    Password:   <input type="password" name = "password" value="">
+    
+    <input type="submit" value="Send">
+  </form>
+
   </body>
 </html>
