@@ -5,7 +5,7 @@
   </head>
   <!-- [END csslink] -->
   <body>
-   <form action= "main.php" enctype="multipart/form-data" method="post">
+   <form action= "helloworld.php" enctype="multipart/form-data" method="post">
     Username:  <input type="text" name = "username" value="">
     Password:   <input type="password" name = "password" value="">
     
